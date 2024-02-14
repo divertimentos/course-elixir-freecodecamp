@@ -135,6 +135,6 @@ The `<>` is the String Concatenation Operator. This is what it can do:
 
 To access the Raw representation of a char, open `iex` and type `?a` for example.
 
-- `?a` equals to `97
+- `?a` equals to `97`
 - `?b` equals to `98`
 - `?c` equals to `99`
