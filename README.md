@@ -1,1 +1,2 @@
-# course-elixir-freecodecamp
+# Functional Programming with Elixir – Full Course (Octallium)
+
