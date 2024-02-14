@@ -1,7 +1,8 @@
-# IO.puts("Octavarium")
-#
-# "O" <> rest = "Octavarium"
-# IO.puts(rest)
+IO.puts("Octavarium")
+
+# Basic pattern matching
+"O" <> rest = "Octavarium"
+IO.puts(rest)
 
 name = "Octavarium"
 # Checking if it's binary:
