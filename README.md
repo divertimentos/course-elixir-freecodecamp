@@ -16,7 +16,7 @@ Recursion is doing the same task again and again. The task calls itself, so it r
 
 # Un-learning
 
-_(aka all that you know versis all that you don't)_
+_(aka all that you know versus all that you don't)_
 
 The `a = 1` concept isn't an assignment, it's literally the mathematical **equal**. It means that `1 = a` is the same. It's a **match** operator. That's Pattern Matching.
 
