@@ -161,3 +161,42 @@ Lists are linked lists. That means that indexing doesn't work.
 Linked lists are recursive. We handle them using recursion and built-in modules. Like `Enum`. To show the functions provided by a built-in module, open `iex` , start typing `Enum.`, and then hit Tab.
 
 ![enum builtins](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/assets/enum-functions.png)
+
+## Function Arity
+
+The numbers at the right of each `/` represent the number of parameters the functions expects. Some can have multiple expectations, like `any?/1` and `any?/2`. As far as I understood, they can be optional parameters. We call it Arity.
+
+## Seeking help from documentation (Function Definition)
+
+- Open `iex` and type `h(Enum.at)` to open `Enum.at` documentation. Pretty neat!
+
+### Extracting data from lists using pattern matching
+
+```elixir
+lista = ["a", "b", "c"]
+
+[first, second, third] = lista
+```
+
+Elixir compiler will curse if you let an extracted/destrucutred variable unused. To ignore some some items from the list, use underscored (`_`).
+
+### Convenience list functions
+
+```elixir
+listb = ["a", "b", "c"]
+
+hd(listb) #returns the first item
+
+tl(listb) # returns the remaining items
+
+```
+
+### Cons operator
+
+The Cons separates the head from the remainder of the items
+
+```elixir
+listc = ["a", "b", "c", "d", "e", "f", "g"]
+
+[h | t] = listc
+```
