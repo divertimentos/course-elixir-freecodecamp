@@ -160,4 +160,4 @@ Lists are linked lists. That means that indexing doesn't work.
 
 Linked lists are recursive. We handle them using recursion and built-in modules. Like `Enum`. To show the functions provided by a built-in module, open `iex` , start typing `Enum.`, and then hit Tab.
 
-[enum builtins](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/assets/enum-functions.png)
+![enum builtins](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/assets/enum-functions.png)
