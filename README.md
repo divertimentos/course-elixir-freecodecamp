@@ -12,7 +12,7 @@ And why it's important?
 
 Recursion is doing the same task again and again. The task calls itself, so it runs again, and again.
 
-(related file: [recursive_universe.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/recursive_universe.exs))
+(Link to code: [recursive_universe.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/recursive_universe.exs))
 
 # Un-learning
 
