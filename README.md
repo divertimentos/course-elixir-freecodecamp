@@ -1,4 +1,4 @@
-# What does "Functional Programming" mean?
+# What does Functional Programming mean?
 
 - It means that the program is composed of differentet functions
 - There is no classes or objects
