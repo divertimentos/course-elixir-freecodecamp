@@ -224,7 +224,7 @@ IO.puts(data[:a])
 
 ## Maps
 
-To create a map, use curly bracked preceeded by a percent symbol: `%{}`. They are similar do Python's dictionaries (or JavaScript objects). They offer more features than Keyword Lists and Tuples.
+To create a map, use curly bracket preceeded by a percent symbol: `%{}`. They are similar do Python's dictionaries (or JavaScript objects). They offer more features than Keyword Lists and Tuples.
 
 - Example of map: `my_map = %{a: 1, b: 2, c: 3}`
 - Example of a map which keys are strings: `my_map2 = %{"a" => 1, "b" => 2, "c" => 3}`
