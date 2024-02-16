@@ -36,6 +36,8 @@ And to be honest I still don't understand why. But to avoid that, you can use th
 
 The teacher said that these things should be more clear in the future, as we see more examples. Immutability is important to transfer data to other places without needlessly using extra resources.
 
+(Link to code: [pattern_matching.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/pattern_matching.exs))
+
 # Actor Model
 
 All code is executed within this thing called Actor. It receives messages that could be data or instructions. It process messages and returns responses. It gets, processes, and gives data back in return.
@@ -109,6 +111,8 @@ An example is
 IO.puts(reason)
 ```
 
+(Link to code: [atoms.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/atoms.exs))
+
 ## String
 
 Represent by double quotes. If you use single quotes they are character lists, which is different from a string. Elixir uses UTF-8. Inside the `iex` you can use `i("Your string")` to check extra informations about them:
@@ -143,6 +147,8 @@ To access the Raw representation of a char, open `iex` and type `?a` for example
 - `?b` equals to `98`
 - `?c` equals to `99`
 
+(Link to code: [strings.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/strings.exs))
+
 ## Charlist
 
 Charlists are lists. To concatenate them, instead of `<>` we're using `++`.
@@ -152,11 +158,15 @@ chars = "Octavarium"
 IO.puts(~c"Hello, " ++ chars)
 ```
 
+(Link to code: [charlist.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/charlist.exs))
+
 You can test if something is a list using `is_list()` function. Since everything is a function, I'll stop using "xyz function", because... yeah.
 
 ## Processes
 
 To check the process, just use `self()`. They're unique.
+
+(Link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
 
 ## Lists
 
@@ -207,6 +217,8 @@ listc = ["a", "b", "c", "d", "e", "f", "g"]
 [h | t] = listc
 ```
 
+(Link to code: [lists.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/lists.exs))
+
 ## Tuples
 
 Tuples are defined using curly brackets (`{}`), so **THAT'S** a big difference between Elixir and JavaScript. Let's see tuples' properties. Tuples as indicated to store a small collection of entities, since they are similar to arrays.
@@ -219,6 +231,8 @@ It's possible to pattern match them as well. When using Phoenix frameworks, it's
 
 I just didn't understand why tuples are useful. I mean, in Python they are the same as sets, so they are useful for what sets are useful, mathematically. They store unique, values that can be addressed by their index. Are Elixir tuples similar? The teacher didn't explain.
 
+(Link to code: [tuples.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/tuples.exs))
+
 ## Keyword Lists
 
 They are key/value-paired lists. But each element inside it is actually a tuple. Ok, now tuples are getting interesting. To retrieve elements from it, it's similar to lists:
@@ -227,6 +241,8 @@ They are key/value-paired lists. But each element inside it is actually a tuple.
 data = [a: 1, b: 2]
 IO.puts(data[:a])
 ```
+
+(Link to code: [keyword_lists.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/keyword_lists.exs))
 
 ## Maps
 
@@ -257,3 +273,5 @@ my_map2 = %{my_map2 | "c" => 4}
 Ok, I think I understood what just happened. Before the pipe ("`|`") operator is the "head", meaning that you're appending "`'c' => 4`" to whatever that matches its key. Thinking again, the head doesn't matter because you could be replacing/updating the first/head element too. The Pattern Matching is what matters here.
 
 Ok, Pattern Matching is a really important feature to Elixir.
+
+(Link to code: [maps.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/maps.exs))
