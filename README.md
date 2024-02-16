@@ -12,7 +12,7 @@ And why it's important?
 
 Recursion is doing the same task again and again. The task calls itself, so it runs again, and again.
 
-(related file: [recursive_universe](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/recursive_universe.exs))
+(related file: [recursive_universe.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/recursive_universe.exs))
 
 # Un-learning
 
@@ -47,6 +47,8 @@ Data can distributed among clusters of machines, horizontally. That can happen a
 Actors run in processes and have an unique PID. We can communicate with these processes by message-passing. Since the data is immutable, we can create copies that can be sent to different processes. We don't need to worry if that information is transformed inside a given process; everything is done in isolation.
 
 Each process has its own Stack and Heap allocation. Ok **NOW** I couldn't get. I know these words are in the bible, but I remember what they mean.
+
+(link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
 
 ## Working
 
@@ -87,6 +89,8 @@ Ok, there's a fourth way. Inside the `iex` you can call the module followed by t
   It will show an atom. In this case it shows `:ok`.
 
 To recompile an already compiled module (which process is saved in memory and needs to be re-compiled), you can use `r`. Like `r Hello.
+
+(link to code: [hello.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/hello.exs))
 
 # Data Types in Elixir
 
