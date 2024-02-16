@@ -48,8 +48,6 @@ Actors run in processes and have an unique PID. We can communicate with these pr
 
 Each process has its own Stack and Heap allocation. Ok **NOW** I couldn't get. I know these words are in the bible, but I remember what they mean.
 
-(link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
-
 ## Working
 
 - Every process has its own Mailbox that receives messages
@@ -69,6 +67,8 @@ To address which PID a process is using, you can call the `self()` function.
     (elixir 1.16.1) lib/io.ex:784: IO.puts/2
     process.exs:1: (file)
 ```
+
+(link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
 
 # Finally, the Hello World!
 
