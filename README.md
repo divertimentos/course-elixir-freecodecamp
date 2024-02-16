@@ -200,3 +200,54 @@ listc = ["a", "b", "c", "d", "e", "f", "g"]
 
 [h | t] = listc
 ```
+
+## Tuples
+
+Tuples are defined using curly brackets (`{}`), so **THAT'S** a big difference between Elixir and JavaScript. Let's see tuples' properties. Tuples as indicated to store a small collection of entities, since they are similar to arrays.
+
+It's commont to have tuples that have just two or three elements. But why?
+
+It's possible to pattern match them as well. When using Phoenix frameworks, it's common to see tuples like this one:
+
+`{:reply, msg, state} = {:reply, "Octavarium found!", ["Ocvatarium", "Louise", "Chicó"]}`
+
+I just didn't understand why tuples are useful. I mean, in Python they are the same as sets, so they are useful for what sets are useful, mathematically. They store unique, values that can be addressed by their index. Are Elixir tuples similar? The teacher didn't explain.
+
+## Keyword Lists
+
+They are key/value-paired lists. But each element inside it is actually a tuple. Ok, now tuples are getting interesting. To retrieve elements from it, it's similar to lists:
+
+```elixir
+data = [a: 1, b: 2]
+IO.puts(data[:a])
+```
+
+## Maps
+
+To create a map, use curly bracked preceeded by a percent symbol: `%{}`. They are similar do Python's dictionaries (or JavaScript objects). They offer more features than Keyword Lists and Tuples.
+
+- Example of map: `my_map = %{a: 1, b: 2, c: 3}`
+- Example of a map which keys are strings: `my_map2 = %{"a" => 1, "b" => 2, "c" => 3}`
+
+To access regular maps, you can use pattern matching, and dot notation.
+
+- Pattern matching: `%{a: first, b: second, c: third} = my_map`
+- Dot notation: `my_map.a`
+
+To access maps which keys are strings, use arrows too:
+
+- Arrows: `%{"c" => c} = my_map2`
+
+### Updating values inside a map:
+
+```elixir
+my_map = %{a: 1, b: 2, c: 3}
+my_map = %{my_map | c: 4}
+
+my_map2 = %{"a" => 1, "b" => 2, "c" => 3}
+my_map2 = %{my_map2 | "c" => 4}
+```
+
+Ok, I think I understood what just happened. Before the pipe ("`|`") operator is the "head", meaning that you're appending "`'c' => 4`" to whatever that matches its key. Thinking again, the head doesn't matter because you could be replacing/updating the first/head element too. The Pattern Matching is what matters here.
+
+Ok, Pattern Matching is a really important feature to Elixir.
