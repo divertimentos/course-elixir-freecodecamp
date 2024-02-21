@@ -297,3 +297,9 @@ It works like a JS switch
 ## Cond
 
 It performs a pattern match without the need of an expression
+
+## If/Else
+
+They exist, but we don't use them.
+
+Nothing but #RESPECT for Elixir!

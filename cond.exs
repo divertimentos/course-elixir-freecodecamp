@@ -1,3 +1,5 @@
+lista = [1, 2, 3]
+
 defmodule Post do
   defstruct(
     id: nil,
@@ -17,4 +19,15 @@ defmodule Post do
   end
 end
 
-IO.puts(Post.editPost())
+defmodule Main do
+  def cond_pattern_match(list) do
+    cond do
+      # Matches the head of the list, which is 1
+      hd(list) -> "Got a 1"
+      true -> "Head is #{hd(list)}}"
+    end
+  end
+end
+
+# IO.puts(Post.editPost())
+IO.puts(Main.cond_pattern_match(lista))
