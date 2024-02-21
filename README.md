@@ -295,3 +295,5 @@ Other than recursion, Elixir provides a couple more mechanisms to do flow contro
 It works like a JS switch
 
 ## Cond
+
+It performs a pattern match without the need of an expression
