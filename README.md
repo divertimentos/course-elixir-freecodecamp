@@ -274,3 +274,14 @@ Ok, I think I understood what just happened. Before the pipe ("`|`") operator is
 Ok, Pattern Matching is a really important feature to Elixir.
 
 (Link to code: [maps.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/maps.exs))
+
+### Structs
+
+Structs are present in other compiled programming languages, such as C and Golang. Since I came from Python, JS and a little bit or Ruby, these concepts are new to me. Let's dive into it the hard way.
+
+- Structs require modules.
+- You define Structs similarly to the way you define maps. You just specify the struct's name:
+
+`%User{username: "Octavarium", age: 19, email: "octa@varium.dev"}`
+
+- They can be accessed the same way Maps are accessed, and they can be assigned to variables too.
