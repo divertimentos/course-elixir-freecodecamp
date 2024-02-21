@@ -285,3 +285,13 @@ Structs are present in other compiled programming languages, such as C and Golan
 `%User{username: "Octavarium", age: 19, email: "octa@varium.dev"}`
 
 - They can be accessed the same way Maps are accessed, and they can be assigned to variables too.
+
+## Flow Control Mechanisms
+
+Other than recursion, Elixir provides a couple more mechanisms to do flow control.
+
+## Case Statement
+
+It works like a JS switch
+
+## Cond
