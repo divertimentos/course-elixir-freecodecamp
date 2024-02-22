@@ -308,4 +308,4 @@ Nothing but RESPECT for Elixir!
 
 # Part 2: Functional Programming Fundamentals
 
-Access the separate documentation for Functional Programming Fundamentals
+Access the [separate documentation for Functional Programming Fundamentals](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/tutorials/README.md).
