@@ -21,7 +21,7 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/tutorials>.
 
-### Recursion
+### Recursion 101
 
 Ok, let's jump straight to where it hurts. 
 
@@ -38,3 +38,13 @@ The function overload is interesting because it enables the module to call both 
 > Fun fact: I couldn't understand recursion the last time I tried, back in 2018; but I'm understanding now. The level of difficulty is way higher, but my mind seems more prepared as well.
 
 ![recursion-function-explained](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/assets/elixir-recursion.png)
+
+The explanation about Tail Recursion vs Head Recursion is interesting.
+
+- **Tail Recursion** (ascending) is when a certain function calls itself as an immediate return each time, but with a different parameter.
+
+- **Head Recursion** (return) is when we have an early recursion call, and then a code that will be returned, so it's put on hold until the recursion loop is satisfied.
+
+Back in 2018 I was taught the return version, and now I believe that's why I got traumatized. Even now is a struggle to understand what's going on and why the `IO.puts()` is put on hold when you let it as the return and puts the recursive call before it. The result is reversed because the return version is a stack. Last in, first out (LIFO).
+
+### Sum Digits using Recursion
