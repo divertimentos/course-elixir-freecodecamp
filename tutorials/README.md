@@ -1,8 +1,10 @@
+# Part 2: Functional Programming Fundamentals with Elixir
+
 # Tutorials Project
 
 **TODO: Add description**
 
-## Installation
+### Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `tutorials` to your list of dependencies in `mix.exs`:
@@ -19,11 +21,9 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/tutorials>.
 
-## Recursion
+### Recursion
 
 Ok, let's jump straight to where it hurts. 
-
-
 
 > Sem rodinha, sem bandaid, a vida é uma piscina de Merthiolate e você ralou o joelho, baby!
 
@@ -35,10 +35,6 @@ Ok, I understand recursion IN THEORY. I just need to let it settle and keep prac
 
 The function overload is interesting because it enables the module to call both twin functions when compiling.
 
-
-
 > Fun fact: I couldn't understand recursion the last time I tried, back in 2018; but I'm understanding now. The level of difficulty is way higher, but my mind seems more prepared as well.
-
-
 
 ![recursion-function-explained](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/assets/elixir-recursion.png)
