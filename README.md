@@ -1,4 +1,8 @@
-# What does Functional Programming mean?
+# Functional Programming With Elixir - Full Course
+
+## Part 1: Elixir Fundamentals and Data Structures
+
+### What does Functional Programming mean?
 
 - It means that the program is composed of different functions
 - There is no classes or objects
@@ -6,21 +10,17 @@
 - We do not have `for` loops. We loop through collections using `map`, which takes a collection and applies transformations to all of its elements and then returns a **new** collection as a result.
 - Elixir uses recursion
 
-## What is Recursion?
-
-And why it's important?
+### What is Recursion (and why it's important)?
 
 Recursion is doing the same task again and again. The task calls itself, so it runs again, and again.
 
 (Link to code: [recursive_universe.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/recursive_universe.exs))
 
-## Un-learning
-
-_(aka all that you know versus all that you don't)_
+### Un-learning (aka *all that you know versus all that you don't*)
 
 The `a = 1` concept isn't an assignment, it's literally the mathematical **equal**. It means that `1 = a` is the same. It's a **match** operator. That's Pattern Matching.
 
-## Pattern Matching
+### Pattern Matching
 
 `[a, a] = [1, 1]`
 
@@ -38,11 +38,11 @@ The teacher said that these things should be more clear in the future, as we see
 
 (Link to code: [pattern_matching.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/pattern_matching.exs))
 
-## Actor Model
+### Actor Model
 
 All code is executed within this thing called Actor. It receives messages that could be data or instructions. It process messages and returns responses. It gets, processes, and gives data back in return.
 
-### Processes
+#### Processes
 
 Data can distributed among clusters of machines, horizontally. That can happen across the globe by using threads.
 
@@ -50,7 +50,7 @@ Actors run in processes and have an unique PID. We can communicate with these pr
 
 Each process has its own Stack and Heap allocation. Ok **NOW** I couldn't get. I know these words are in the bible, but I remember what they mean.
 
-### Working
+#### Working
 
 - Every process has its own Mailbox that receives messages
 - It works independently
@@ -72,7 +72,7 @@ To address which PID a process is using, you can call the `self()` function.
 
 (link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
 
-## Finally, the Hello World!
+### Finally, the Hello World!
 
 - `.exs` files are used to create scripts. So the `s` stands for "Script"
 - `ex` are compile files
@@ -94,11 +94,11 @@ To recompile an already compiled module (which process is saved in memory and ne
 
 (link to code: [hello.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/hello.exs))
 
-## Data Types in Elixir
+### Data Types in Elixir
 
 All data types are constants, because all data is immutable
 
-### Atom
+#### Atom
 
 Their syntax is `:atom_name` or `:"Atom name"`.
 
@@ -113,7 +113,7 @@ IO.puts(reason)
 
 (Link to code: [atoms.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/atoms.exs))
 
-### String
+#### String
 
 Represent by double quotes. If you use single quotes they are character lists, which is different from a string. Elixir uses UTF-8. Inside the `iex` you can use `i("Your string")` to check extra informations about them:
 
@@ -149,7 +149,7 @@ To access the Raw representation of a char, open `iex` and type `?a` for example
 
 (Link to code: [strings.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/strings.exs))
 
-### Charlist
+#### Charlist
 
 Charlists are lists. To concatenate them, instead of `<>` we're using `++`.
 
@@ -162,13 +162,13 @@ IO.puts(~c"Hello, " ++ chars)
 
 You can test if something is a list using `is_list()` function. Since everything is a function, I'll stop using "xyz function", because... yeah.
 
-### Processes
+#### Processes
 
 To check the process, just use `self()`. They're unique.
 
 (Link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
 
-### Lists
+#### Lists
 
 Lists are linked lists. That means that indexing doesn't work.
 
@@ -178,15 +178,15 @@ Linked lists are recursive. We handle them using recursion and built-in modules.
 
 ![enum builtins](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/assets/enum-functions.png)
 
-### Function Arity
+#### Function Arity
 
 The numbers at the right of each `/` represent the number of parameters the functions expects. Some can have multiple expectations, like `any?/1` and `any?/2`. As far as I understood, they can be optional parameters. We call it Arity.
 
-### Seeking help from documentation (Function Definition)
+#### Seeking help from documentation (Function Definition)
 
 - Open `iex` and type `h(Enum.at)` to open `Enum.at` documentation. Pretty neat!
 
-#### Extracting data from lists using pattern matching
+##### Extracting data from lists using pattern matching
 
 ```elixir
 lista = ["a", "b", "c"]
@@ -196,7 +196,7 @@ lista = ["a", "b", "c"]
 
 Elixir compiler will curse if you let an extracted/destrucutred variable unused. To ignore some some items from the list, use underscored (`_`).
 
-#### Convenience list functions
+##### Convenience list functions
 
 ```elixir
 listb = ["a", "b", "c"]
@@ -206,7 +206,7 @@ hd(listb) #returns the first item
 tl(listb) # returns the remaining items
 ```
 
-#### Cons operator
+##### Cons operator
 
 The Cons separates the head from the remainder of the items
 
@@ -218,7 +218,7 @@ listc = ["a", "b", "c", "d", "e", "f", "g"]
 
 (Link to code: [lists.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/lists.exs))
 
-### Tuples
+#### Tuples
 
 Tuples are defined using curly brackets (`{}`), so **THAT'S** a big difference between Elixir and JavaScript. Let's see tuples' properties. Tuples as indicated to store a small collection of entities, since they are similar to arrays.
 
@@ -232,7 +232,7 @@ I just didn't understand why tuples are useful. I mean, in Python they are the s
 
 (Link to code: [tuples.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/tuples.exs))
 
-### Keyword Lists
+#### Keyword Lists
 
 They are key/value-paired lists. But each element inside it is actually a tuple. Ok, now tuples are getting interesting. To retrieve elements from it, it's similar to lists:
 
@@ -243,7 +243,7 @@ IO.puts(data[:a])
 
 (Link to code: [keyword_lists.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/keyword_lists.exs))
 
-### Maps
+#### Maps
 
 To create a map, use curly bracket preceeded by a percent symbol: `%{}`. They are similar do Python's dictionaries (or JavaScript objects). They offer more features than Keyword Lists and Tuples.
 
@@ -259,7 +259,7 @@ To access maps which keys are strings, use arrows too:
 
 - Arrows: `%{"c" => c} = my_map2`
 
-#### Updating values inside a map:
+##### Updating values inside a map:
 
 ```elixir
 my_map = %{a: 1, b: 2, c: 3}
@@ -275,7 +275,7 @@ Ok, Pattern Matching is a really important feature to Elixir.
 
 (Link to code: [maps.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/maps.exs))
 
-### Structs
+#### Structs
 
 Structs are present in other compiled programming languages, such as C and Golang. Since I came from Python, JS and a little bit or Ruby, these concepts are new to me. Let's dive into it the hard way.
 
@@ -286,20 +286,24 @@ Structs are present in other compiled programming languages, such as C and Golan
 
 - They can be accessed the same way Maps are accessed, and they can be assigned to variables too.
 
-## Flow Control Mechanisms
+### Flow Control Mechanisms
 
 Other than recursion, Elixir provides a couple more mechanisms to do flow control.
 
-## Case Statement
+### Case Statement
 
 It works like a JS switch
 
-## Cond
+### Cond
 
 It performs a pattern match without the need of an expression
 
-## If/Else
+### If/Else
 
 They exist, but we don't use them.
 
-Nothing but #RESPECT for Elixir!
+Nothing but RESPECT for Elixir!
+
+---
+
+## Part 2: Funcional Programming Fundamentals
