@@ -2,32 +2,13 @@
 
 # Tutorials Project
 
-**TODO: Add description**
-
-### Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `tutorials` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:tutorials, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/tutorials>.
-
 ### Recursion 101
 
-Ok, let's jump straight to where it hurts. 
+Ok, let's jump straight to where it hurts.
 
 > Sem rodinha, sem bandaid, a vida é uma piscina de Merthiolate e você ralou o joelho, baby!
 
-Function overloading is when we create copies of an original function. We use the overloading feature to create two twin functions named `upto()`. They're different, however. The first one is just a base case, it's the halt function. Whenever it receives the halt parameter (which is `0` here), it will return `0`. 
+Function overloading is when we create copies of an original function. We use the overloading feature to create two twin functions named `upto()`. They're different, however. The first one is just a base case, it's the halt function. Whenever it receives the halt parameter (which is `0` here), it will return `0`.
 
 The other function will print the parameter it receives, but instead of halting, it will returning a call of itself, but with a `(param - 1)` as a parameter. This will keep invoking the function indefinitely until it halts itself, which is when 0 is received/returned.
 
@@ -48,3 +29,5 @@ The explanation about Tail Recursion vs Head Recursion is interesting.
 Back in 2018 I was taught the return version, and now I believe that's why I got traumatized. Even now is a struggle to understand what's going on and why the `IO.puts()` is put on hold when you let it as the return and puts the recursive call before it. The result is reversed because the return version is a stack. Last in, first out (LIFO).
 
 ### Sum Digits using Recursion
+
+(Current YouTube timestamp: 2:00:19)
