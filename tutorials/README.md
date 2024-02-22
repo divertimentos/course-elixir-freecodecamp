@@ -69,3 +69,7 @@ end
 To be honest I couldn't understand what the public function added has to do with the calculation per se. The teacher said that it's more like a way to document the code. But documenting code by overloading a function like **thrice**?
 
 > (Ok, as far as I understood, the Public Function defines optional parameters. Since they don't have body/return, it serves as a stablishment of official code, but as an information to the compiler not to break if a secondary parameter isn't provided.) 
+
+
+
+### Recursive Factorial
