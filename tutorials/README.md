@@ -30,4 +30,42 @@ Back in 2018 I was taught the return version, and now I believe that's why I got
 
 ### Sum Digits using Recursion
 
-(Current YouTube timestamp: 2:00:19)
+Do create a summation (pt-br: Somatório) function, you need to provide a starting number as a parameter and set `0` as a halt step. To summate, the recursive function (e.g.: `upto()`) should sum the starting number with `upto(num -1)`. Like this:
+
+```elixir
+defmodule SumDigits do
+    def upto(0), do: 0
+
+    def upto(num) do
+        num + upto(num -1)
+    end
+end
+```
+
+#### HINT: Compiling Mix modules with IEX:
+
+- Open `iex` using `iex -S mix`
+
+- Create an alias for the desired module using `alias Tutorials.Recursion.Sumdigits`, for example
+
+- Run the function inside the `SumDigits` module using `SumDigits.upto(3)`, for example
+
+- **Bonus hint: to recompile the module, use `recompile` or `r(SumDigits)`**
+
+Back to the `SumDigits.upto()` function. This function is neither head recursive or tail recursive, it's just recursive. But we can convert it to a tail recursive one.
+
+When creating recursive functions, parameters are quite important. For example, a tail version receives two parameters:
+
+```elixir
+def upto_tail(0, acc), do: acc
+
+def upto_tail(num, acc) do
+  upto_tail(num - 1, acc + num)
+end
+```
+
+#### Public Functions
+
+To be honest I couldn't understand what the public function added has to do with the calculation per se. The teacher said that it's more like a way to document the code. But documenting code by overloading a function like **thrice**?
+
+> (Ok, as far as I understood, the Public Function defines optional parameters. Since they don't have body/return, it serves as a stablishment of official code, but as an information to the compiler not to break if a secondary parameter isn't provided.) 
