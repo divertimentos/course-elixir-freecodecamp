@@ -2,6 +2,8 @@
 
 # Part 1: Elixir Fundamentals and Data Structures
 
+(Access the documentation for Part 2, on [Functional Programming Fundamentals with Elixir](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/tutorials/README.md)
+
 ## What does Functional Programming mean?
 
 - It means that the program is composed of different functions
