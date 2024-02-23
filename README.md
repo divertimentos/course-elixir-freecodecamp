@@ -1,3 +1,39 @@
+<!--toc:start-->
+
+- [Functional Programming With Elixir - Full Course](#functional-programming-with-elixir-full-course)
+- [Part 1: Elixir Fundamentals and Data Structures](#part-1-elixir-fundamentals-and-data-structures)
+  - [What does Functional Programming mean?](#what-does-functional-programming-mean)
+  - [What is Recursion (and why it's important)?](#what-is-recursion-and-why-its-important)
+  - [Un-learning (aka _all that you know versus all that you don't_)](#un-learning-aka-all-that-you-know-versus-all-that-you-dont)
+  - [Pattern Matching](#pattern-matching)
+  - [Actor Model](#actor-model)
+    - [Processes](#processes)
+    - [Working](#working)
+  - [Finally, the Hello World!](#finally-the-hello-world)
+  - [Data Types in Elixir](#data-types-in-elixir)
+    - [Atom](#atom)
+    - [String](#string)
+    - [Charlist](#charlist)
+    - [Processes](#processes)
+    - [Lists](#lists)
+    - [Function Arity](#function-arity)
+    - [Seeking help from documentation (Function Definition)](#seeking-help-from-documentation-function-definition)
+      - [Extracting data from lists using pattern matching](#extracting-data-from-lists-using-pattern-matching)
+      - [Convenience list functions](#convenience-list-functions)
+      - [Cons operator](#cons-operator)
+    - [Tuples](#tuples)
+    - [Keyword Lists](#keyword-lists)
+    - [Maps](#maps)
+      - [Updating values inside a map:](#updating-values-inside-a-map)
+    - [Structs](#structs)
+  - [Flow Control Mechanisms](#flow-control-mechanisms)
+    - [Case Statement](#case-statement)
+    - [Cond](#cond)
+    - [If/Else](#ifelse)
+- [Part 2: Functional Programming Fundamentals](#part-2-functional-programming-fundamentals)
+  - [Tutorials Project](#tutorials-project) - [Recursion 101](#recursion-101) - [Sum Digits using Recursion](#sum-digits-using-recursion) - [HINT: Compiling Mix modules with IEX:](#hint-compiling-mix-modules-with-iex) - [Public Functions](#public-functions) - [Recursive Factorial](#recursive-factorial)
+  <!--toc:end-->
+
 # Functional Programming With Elixir - Full Course
 
 # Part 1: Elixir Fundamentals and Data Structures
@@ -162,7 +198,7 @@ IO.puts(~c"Hello, " ++ chars)
 
 You can test if something is a list using `is_list()` function. Since everything is a function, I'll stop using "xyz function", because... yeah.
 
-### Processes
+### Processes (cont.)
 
 To check the process, just use `self()`. They're unique.
 
