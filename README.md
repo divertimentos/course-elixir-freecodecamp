@@ -346,7 +346,7 @@ Nothing but RESPECT for Elixir!
 
 ## Tutorials Project
 
-#### Recursion 101
+### Recursion
 
 Ok, let's jump straight to where it hurts.
 
@@ -408,7 +408,7 @@ def upto_tail(num, acc) do
 end
 ```
 
-##### Public Functions
+#### Public Functions
 
 To be honest I couldn't understand what the public function added has to do with the calculation per se. The teacher said that it's more like a way to document the code. But documenting code by overloading a function like **thrice**?
 
