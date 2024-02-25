@@ -14,7 +14,7 @@
     - [Atom](#atom)
     - [String](#string)
     - [Charlist](#charlist)
-    - [Processes](#processes)
+    - [Processes (cont.)](#processes-cont)
     - [Lists](#lists)
     - [Function Arity](#function-arity)
     - [Seeking help from documentation (Function Definition)](#seeking-help-from-documentation-function-definition)
@@ -31,7 +31,7 @@
     - [Cond](#cond)
     - [If/Else](#ifelse)
 - [Part 2: Functional Programming Fundamentals](#part-2-functional-programming-fundamentals)
-  - [Tutorials Project](#tutorials-project) - [Recursion 101](#recursion-101) - [Sum Digits using Recursion](#sum-digits-using-recursion) - [HINT: Compiling Mix modules with IEX:](#hint-compiling-mix-modules-with-iex) - [Public Functions](#public-functions) - [Recursive Factorial](#recursive-factorial)
+  - [Tutorials Project](#tutorials-project) - [Recursion](#recursion) - [Sum Digits using Recursion](#sum-digits-using-recursion) - [HINT: Compiling Mix modules with IEX:](#hint-compiling-mix-modules-with-iex) - [Public Functions](#public-functions) - [Recursive Factorial](#recursive-factorial)
   <!--toc:end-->
 
 # Functional Programming With Elixir - Full Course
@@ -345,8 +345,6 @@ Nothing but RESPECT for Elixir!
 # Part 2: Functional Programming Fundamentals
 
 ## Tutorials Project
-
-Test.
 
 ### Recursion
 
