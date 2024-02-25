@@ -31,8 +31,14 @@
     - [Cond](#cond)
     - [If/Else](#ifelse)
 - [Part 2: Functional Programming Fundamentals](#part-2-functional-programming-fundamentals)
-  - [Tutorials Project](#tutorials-project) - [Recursion](#recursion) - [Sum Digits using Recursion](#sum-digits-using-recursion) - [HINT: Compiling Mix modules with IEX:](#hint-compiling-mix-modules-with-iex) - [Public Functions](#public-functions) - [Recursive Factorial](#recursive-factorial)
-  <!--toc:end-->
+  - [Tutorials Project](#tutorials-project)
+    - [Recursion](#recursion)
+      - [Sum Digits using Recursion](#sum-digits-using-recursion)
+        - [HINT: Compiling Mix modules with IEX:](#hint-compiling-mix-modules-with-iex)
+      - [Public Functions](#public-functions)
+      - [Recursive Factorial](#recursive-factorial)
+
+<!--toc:end-->
 
 # Functional Programming With Elixir - Full Course
 
