@@ -8,6 +8,6 @@ defmodule Main do
   end
 end
 
-IO.puts(Main.sum(3, 2))
-IO.puts(Main.sum(10, 10))
-IO.puts(Main.sum(3, 5))
+IO.puts("3 + 2 = #{Main.sum(3, 2)}")
+IO.puts("10 + 10 = #{Main.sum(10, 10)}")
+IO.puts("3 + 5 = #{Main.sum(3, 5)}")
