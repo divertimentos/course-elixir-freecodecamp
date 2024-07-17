@@ -1,4 +1,8 @@
+# Functional Programming With Elixir - Full Course
+
 ![course-cover](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/assets/course-cover.png)
+
+## Summary
 
 <!--toc:start-->
 
@@ -42,7 +46,7 @@
 
 <!--toc:end-->
 
-# Functional Programming With Elixir - Full Course
+---
 
 # Part 1: Elixir Fundamentals and Data Structures
 
