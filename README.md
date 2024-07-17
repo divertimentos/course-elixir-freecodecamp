@@ -1,3 +1,5 @@
+![course-cover](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/assets/course-cover.png)
+
 <!--toc:start-->
 
 - [Functional Programming With Elixir - Full Course](#functional-programming-with-elixir-full-course)
@@ -114,7 +116,7 @@ To address which PID a process is using, you can call the `self()` function.
 
 (link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
 
-## Finally, the Hello World!
+## Finally, the Hello World
 
 - `.exs` files are used to create scripts. So the `s` stands for "Script"
 - `ex` are compile files
@@ -301,7 +303,7 @@ To access maps which keys are strings, use arrows too:
 
 - Arrows: `%{"c" => c} = my_map2`
 
-#### Updating values inside a map:
+#### Updating values inside a map
 
 ```elixir
 my_map = %{a: 1, b: 2, c: 3}
@@ -392,7 +394,7 @@ defmodule SumDigits do
 end
 ```
 
-##### HINT: Compiling Mix modules with IEX:
+##### HINT: Compiling Mix modules with IEX
 
 - Open `iex` using `iex -S mix`
 
