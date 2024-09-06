@@ -5,8 +5,8 @@
 ## Summary
 
 <!--toc:start-->
-
 - [Functional Programming With Elixir - Full Course](#functional-programming-with-elixir-full-course)
+  - [Summary](#summary)
 - [Part 1: Elixir Fundamentals and Data Structures](#part-1-elixir-fundamentals-and-data-structures)
   - [What does Functional Programming mean?](#what-does-functional-programming-mean)
   - [What is Recursion (and why it's important)?](#what-is-recursion-and-why-its-important)
@@ -15,7 +15,7 @@
   - [Actor Model](#actor-model)
     - [Processes](#processes)
     - [Working](#working)
-  - [Finally, the Hello World!](#finally-the-hello-world)
+  - [Finally, the Hello World](#finally-the-hello-world)
   - [Data Types in Elixir](#data-types-in-elixir)
     - [Atom](#atom)
     - [String](#string)
@@ -30,7 +30,7 @@
     - [Tuples](#tuples)
     - [Keyword Lists](#keyword-lists)
     - [Maps](#maps)
-      - [Updating values inside a map:](#updating-values-inside-a-map)
+      - [Updating values inside a map](#updating-values-inside-a-map)
     - [Structs](#structs)
   - [Flow Control Mechanisms](#flow-control-mechanisms)
     - [Case Statement](#case-statement)
@@ -40,10 +40,9 @@
   - [Tutorials Project](#tutorials-project)
     - [Recursion](#recursion)
       - [Sum Digits using Recursion](#sum-digits-using-recursion)
-        - [HINT: Compiling Mix modules with IEX:](#hint-compiling-mix-modules-with-iex)
+        - [HINT: Compiling Mix modules with IEX](#hint-compiling-mix-modules-with-iex)
       - [Public Functions](#public-functions)
       - [Recursive Factorial](#recursive-factorial)
-
 <!--toc:end-->
 
 ---
@@ -62,7 +61,7 @@
 
 Recursion is doing the same task again and again. The task calls itself, so it runs again, and again.
 
-(Link to code: [recursive_universe.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/recursive_universe.exs))
+(Link to code: [recursive_universe.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/recursive_universe.exs))
 
 ## Un-learning (aka _all that you know versus all that you don't_)
 
@@ -84,7 +83,7 @@ And to be honest I still don't understand why. But to avoid that, you can use th
 
 The teacher said that these things should be more clear in the future, as we see more examples. Immutability is important to transfer data to other places without needlessly using extra resources.
 
-(Link to code: [pattern_matching.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/pattern_matching.exs))
+(Link to code: [pattern_matching.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/pattern_matching.exs))
 
 ## Actor Model
 
@@ -118,7 +117,7 @@ To address which PID a process is using, you can call the `self()` function.
     process.exs:1: (file)
 ```
 
-(link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
+(link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/process.exs))
 
 ## Finally, the Hello World
 
@@ -140,7 +139,7 @@ Ok, there's a fourth way. Inside the `iex` you can call the module followed by t
 
 To recompile an already compiled module (which process is saved in memory and needs to be re-compiled), you can use `r`. Like `r Hello.
 
-(link to code: [hello.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/hello.exs))
+(link to code: [hello.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/hello.exs))
 
 ## Data Types in Elixir
 
@@ -159,7 +158,7 @@ An example is
 IO.puts(reason)
 ```
 
-(Link to code: [atoms.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/atoms.exs))
+(Link to code: [atoms.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/atoms.exs))
 
 ### String
 
@@ -195,7 +194,7 @@ To access the Raw representation of a char, open `iex` and type `?a` for example
 - `?b` equals to `98`
 - `?c` equals to `99`
 
-(Link to code: [strings.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/strings.exs))
+(Link to code: [strings.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/strings.exs))
 
 ### Charlist
 
@@ -206,7 +205,7 @@ chars = "Octavarium"
 IO.puts(~c"Hello, " ++ chars)
 ```
 
-(Link to code: [charlist.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/charlist.exs))
+(Link to code: [charlist.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/charlist.exs))
 
 You can test if something is a list using `is_list()` function. Since everything is a function, I'll stop using "xyz function", because... yeah.
 
@@ -214,7 +213,7 @@ You can test if something is a list using `is_list()` function. Since everything
 
 To check the process, just use `self()`. They're unique.
 
-(Link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/process.exs))
+(Link to code: [process.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/process.exs))
 
 ### Lists
 
@@ -264,7 +263,7 @@ listc = ["a", "b", "c", "d", "e", "f", "g"]
 [h | t] = listc
 ```
 
-(Link to code: [lists.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/lists.exs))
+(Link to code: [lists.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/lists.exs))
 
 ### Tuples
 
@@ -278,7 +277,7 @@ It's possible to pattern match them as well. When using Phoenix frameworks, it's
 
 I just didn't understand why tuples are useful. I mean, in Python they are the same as sets, so they are useful for what sets are useful, mathematically. They store unique, values that can be addressed by their index. Are Elixir tuples similar? The teacher didn't explain.
 
-(Link to code: [tuples.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/tuples.exs))
+(Link to code: [tuples.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/tuples.exs))
 
 ### Keyword Lists
 
@@ -289,7 +288,7 @@ data = [a: 1, b: 2]
 IO.puts(data[:a])
 ```
 
-(Link to code: [keyword_lists.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/keyword_lists.exs))
+(Link to code: [keyword_lists.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/keyword_lists.exs))
 
 ### Maps
 
@@ -321,7 +320,7 @@ Ok, I think I understood what just happened. Before the pipe ("`|`") operator is
 
 Ok, Pattern Matching is a really important feature to Elixir.
 
-(Link to code: [maps.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/maps.exs))
+(Link to code: [maps.exs](https://github.com/divertimentos/course-elixir-freecodecamp/blob/main/scripts/maps.exs))
 
 ### Structs
 
